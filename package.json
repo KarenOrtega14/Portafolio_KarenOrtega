@@ -1,0 +1,17 @@
+{
+  "name": "portafoliofinal",
+  "version": "1.0.0",
+  "main": "public/sass/mystyles.scss",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url public/sass/mystyles.scss public/css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Karen",
+  "license": "MIT",
+  "description": ""
+}
