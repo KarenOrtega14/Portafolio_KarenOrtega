@@ -28,32 +28,32 @@
     <div id="navMenu" class="navbar-menu is-white">
       <div class="navbar-end">
         <div class="navbar-item">
-          <a class="navbar-item">
-            <i class="fas fa-home" aria-hidden="true" style="margin-right: 5px;" ></i>
+          <a onclick="irhome();" class="navbar-item">
+            <i  class="fas fa-home" aria-hidden="true" style="margin-right: 5px;" ></i>
             Inicio
           </a>
         </div>
   
         <div class="navbar-item">
-          <a class="navbar-item">
+          <a onclick="irsobre();" class="navbar-item" >
             Sobre mi
           </a>
         </div>
   
         <div class="navbar-item">
-          <a class="navbar-item">
+          <a onclick="irproyectos();" class="navbar-item">
             Proyectos
           </a>
         </div>
   
         <div class="navbar-item">
-          <a class="navbar-item">
+          <a onclick="irContacto();" class="navbar-item">
             Contacto
           </a>
         </div>
   
         <div class="navbar-item">
-          <a class="button is-primary is-outlined is-rounded">
+          <a onclick="downloadFile()" class="button is-primary is-outlined is-rounded">
             <strong>Descargar cv</strong>
           </a>
         </div>
@@ -62,7 +62,7 @@
   </nav>
 
   <!-- Sección inicio -->
-  <section class="hero is-fullheight">
+  <section id="home" class="hero is-fullheight">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
@@ -82,7 +82,7 @@
   
   
  <!-- Sección de Presentación -->
- <section class="hero is-success">
+ <section id="sobre" class="hero is-success">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title is-2">¡Hola! Soy Karen Ortega</h1>
@@ -126,7 +126,7 @@
 
 
   <!-- Sección de Proyectos -->
-  <section class="section">
+  <section id="proyectos" class="section">
     <div class="container">
       <h1 class="title is-4">Mis Proyectos</h1>
       <div class="columns is-multiline">
@@ -203,7 +203,7 @@
     </div>
   </section>
 
-  <section class="hero is-success">
+  <section id="contacto" class="hero is-success">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <form class="box" style="max-width: 400px; margin: 0 auto;">

@@ -1,15 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Obtén el elemento del botón de la hamburguesa
+   
     var navbarBurger = document.querySelector('.navbar-burger');
   
-    // Obtén el objetivo que la hamburguesa controla
+ 
     var target = document.getElementById(navbarBurger.dataset.target);
   
-    // Añade un evento de escucha de clic en la hamburguesa
+
     navbarBurger.addEventListener('click', function() {
-        // Toggle the 'is-active' class on both the burger and the target element
+     
         navbarBurger.classList.toggle('is-active');
         target.classList.toggle('is-active');
     });
 });
 
+function downloadFile() {
+    try {
+        var fileUrl = '../public/document/Hoja_de_vida.docx';
+        if (fileUrl == null) {
+            console.log("No hay URL del archivo");
+            return;
+        }
+        var fileName = 'KarenOrtega_Hoja_vida.docx';
+
+        var a = document.createElement('a');
+        a.href = fileUrl;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    } catch (error) {
+        console.error("Error al descargar el archivo:", error);
+    }
+}
+
+  function irhome(){
+    window.location.href = '#home';
+}
+  function irsobre(){
+    window.location.href = '#sobre';
+}
+  function irproyectos(){
+    window.location.href = '#proyectos';
+}
+
+  function irContacto(){
+    window.location.href = '#contacto';
+}
+
+  
